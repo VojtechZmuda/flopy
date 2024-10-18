@@ -1134,7 +1134,9 @@ class Package(PackageInterface):
                 data_dict = current_dict[iname]
 
                 par_current = pak_type.get_empty(
-                    par_dict["nlst"], aux_names=aux_names
+                    par_dict["nlst"],
+                    aux_names=aux_names,
+                    structured=model.structured,
                 )
 
                 #  get appropriate parval
