@@ -989,7 +989,7 @@ class Package(PackageInterface):
         # set partype
         #  and read phiramp for modflow-nwt well package
         partype = ["cond"]
-        if "modflowwel" in pak_type_str:
+        if ("modflowwel" in pak_type_str) or ("mfusgwel" in pak_type_str):
             partype = ["flux"]
 
         # check for "standard" single line options from mfnwt
